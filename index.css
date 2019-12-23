@@ -1,0 +1,73 @@
+#title{
+    Font-size: 40px;
+    text-align:center;
+}
+
+#ExampleContainer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+#KeyBeingPressed {
+  background-color: #ff000080;
+  font-size: 40px;
+  padding: 10px;
+  text-align:center;
+}
+
+.container {
+  background-color: #0916ff70;
+  margin: 10.5px 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.container .child {
+  background-color: floralwhite;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border-style: solid;
+  border-radius: 15%;
+  margin: 7px;
+
+  transition: 0.3s;
+}
+
+.container .child:focus {
+  background-color: yellow;
+  transform: scale(1.2);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url("https://st4.depositphotos.com/4022475/22785/v/600/depositphotos_227853604-stock-video-old-school-2d-retro-arcade.jpg");
+  animation: backgroundMove 15s infinite linear;
+  background-size: 1250px 550px;
+  background-repeat: repeat;
+}
+
+/* @keyframes focusedChild {
+  0% {
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+} */
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: 1250px 550px;
+  }
+}
